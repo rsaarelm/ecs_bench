@@ -5,12 +5,12 @@ Benchmarks are run on [Travis CI](https://travis-ci.org/lschmierer/ecs_bench/).
 
 Benchmarks are located in `benches/[bench_name]_[ecs_crate_name].rs`.
 
- Benchmark       | [ecs](https://github.com/HeroesGrave/ecs-rs) | [specs](https://github.com/slide-rs/specs) | [recs](https://github.com/andybarron/rustic-ecs) | [trex](https://github.com/rcolinray/trex)
- --------------- |:--------------------------------------------:|:------------------------------------------:|:------------------------------------------------:|:-----------------------------------------:
- pos_vel build   | 2,052,168 ns/iter (+/- 70,073)                          | 498,342 ns/iter (+/- 400,352)                      | 19,816,170 ns/iter (+/- 3,132,394)                             | 1,052,629 ns/iter (+/- 271,026)
- pos_vel update  | 439,598 ns/iter (+/- 20,638)                         | 81,890 ns/iter (+/- 28,103)                     | 7,408,965 ns/iter (+/- 1,603,295)                            | 238,207 ns/iter (+/- 5,423)
- parallel build  | 2,005,786 ns/iter (+/- 497,210)                         | 586,433 ns/iter (+/- 168,621)                     | 23,465,808 ns/iter (+/- 2,086,760)                            | 3,173,121 ns/iter (+/- 1,546,373)
- parallel update | 9,711,756 ns/iter (+/- 4,634,118)                        | 104,090 ns/iter (+/- 40,966)                    | 14,161,801 ns/iter (+/- 3,291,843)                           | 500,353 ns/iter (+/- 16,157)
+ Benchmark       | [ecs](https://github.com/HeroesGrave/ecs-rs) | [specs](https://github.com/slide-rs/specs) | [recs](https://github.com/andybarron/rustic-ecs) | [trex](https://github.com/rcolinray/trex) | [calx-ecs](https://github.com/rsaarelm/calx-ecs)
+ --------------- |:--------------------------------------------:|:------------------------------------------:|:------------------------------------------------:|:-----------------------------------------:|:-----------------------------------------:
+ pos_vel build   | 1,153,406 ns/iter (+/- 15,423)                          | 261,635 ns/iter (+/- 4,441)                      | 7,670,432 ns/iter (+/- 272,428)                             | 673,889 ns/iter (+/- 9,300)                      | 1,075,719 ns/iter (+/- 15,129)
+ pos_vel update  | 259,833 ns/iter (+/- 4,929)                         | 28,316 ns/iter (+/- 1,073)                     | 2,913,016 ns/iter (+/- 203,456)                            | 154,865 ns/iter (+/- 3,209)                     | 240,677 ns/iter (+/- 1,701)
+ parallel build  | 1,213,603 ns/iter (+/- 16,978)                         | 333,477 ns/iter (+/- 6,368)                     | 9,615,379 ns/iter (+/- 236,040)                            | 1,219,772 ns/iter (+/- 49,946)                     | 1,856,047 ns/iter (+/- 18,668)
+ parallel update | 3,215,346 ns/iter (+/- 34,497)                        | 41,530 ns/iter (+/- 872)                    | 6,012,745 ns/iter (+/- 604,470)                           | 333,553 ns/iter (+/- 10,704)                    | 471,636 ns/iter (+/- 20,050)
 
 ### pos_vel
  * 1000 entities with `position` and `velocity` components
